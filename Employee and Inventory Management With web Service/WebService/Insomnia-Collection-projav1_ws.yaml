@@ -1,0 +1,141 @@
+_type: export
+__export_format: 4
+__export_date: 2021-05-26T02:07:05.036Z
+__export_source: insomnia.desktop.app:v2021.3.0
+resources:
+  - _id: req_8822c801edd74d33860cbcfc60d02a02
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621992794358
+    created: 1621992774531
+    url: http://localhost:8080/produtos
+    name: Listar produtos
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1621992774531
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    parentId: null
+    modified: 1621992759021
+    created: 1621992759021
+    name: ProjAV1-WS
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_e7c877de149040bd9938f2d942ea732e
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621993682594
+    created: 1621992805039
+    url: http://localhost:8080/produtos
+    name: Criar produto
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "Pão",
+        	"quantidade": 2,
+        	"preco": 9.90
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3a4827e6e0f3433c8c88c4787a1f6f3e
+    authentication: {}
+    metaSortKey: -1621763023583.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8ffbc1a8b8e3484f980d7784622291e8
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621994628619
+    created: 1621994144227
+    url: http://localhost:8080/produtos/1
+    name: Atualizar quantidade
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"quantidade": 0
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3a4827e6e0f3433c8c88c4787a1f6f3e
+    authentication: {}
+    metaSortKey: -1621648148109.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_752daaac5b7f4fd6b359a784057a1515
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621994638119
+    created: 1621994245126
+    url: http://localhost:8080/produtos/2
+    name: Remover produto
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1621590710372.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b898d390abea210baa68b10517e4ae4620f7f87f
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621992759191
+    created: 1621992759191
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1621992759191
+    _type: environment
+  - _id: jar_b898d390abea210baa68b10517e4ae4620f7f87f
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621992759193
+    created: 1621992759193
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_b5c3f54372dd4d4fb3acfbb518bf2469
+    parentId: wrk_4820b51e5bbd451393eba6b3980e6a8b
+    modified: 1621992759028
+    created: 1621992759028
+    fileName: ProjAV1-WS
+    contents: ""
+    contentType: yaml
+    _type: api_spec
