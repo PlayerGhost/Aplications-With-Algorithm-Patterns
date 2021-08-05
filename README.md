@@ -1,1 +1,1 @@
-# Shopping-Aplication-With-Algorithm-Patterns-
+# Aplications-With-Algorithm-Patterns
